@@ -1,0 +1,18 @@
+.calendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+ion-buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+.custom-text-color{
+    color: aquamarine;
+}

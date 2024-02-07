@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="warning">
+<ion-title>Ingreso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card >
+  <ion-card-header>
+    <ion-card-title>Fiu</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <form [formGroup]="formularioLogin">
+      <p>
+        <ion-input formControlName="nombre" label="email" type="email" label-placement="floating" errorText="Email Inválido" email></ion-input>
+      </p>
+      <p>
+        <ion-input formControlName="password" label="Contraseña" type="password" label-placement="floating" errorText=" "></ion-input>
+        <span *ngIf="this.formularioLogin.get('password')?.errors?.['minlength']" style="color: red;">
+        (Debe tener como mínimo 6 caracteres)
+        </span>
+      </p>    
+    </form>
+
+  </ion-card-content>
+</ion-card>
+
+<div class="ion-padding">
+  <ion-button color="warning" shape="round" (click)="ingresar()" class="boton">Acceder</ion-button>
+</div>
+
+<div class="ion-label">
+  <ion-label shape="round" [routerLink]="['/registro']">Registrarse</ion-label>
+</div>
+  
+
+</ion-content>
+

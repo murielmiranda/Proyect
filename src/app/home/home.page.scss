@@ -25,3 +25,24 @@
 #container a {
   text-decoration: none;
 }
+
+ion-buttons{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+ion-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 60px;
+}

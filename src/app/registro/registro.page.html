@@ -1,0 +1,30 @@
+<ion-content class="background">
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Registro</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <form [formGroup]="formularioRegistro">
+      <p>
+        <ion-input formControlName="nombre" label="Nombre" label-placement="floating"></ion-input>
+      </p>
+      <p>
+        <ion-input formControlName="email" label="Correo" label-placement="floating" errorText="Email Inválido" email></ion-input>
+      </p>
+      <p>
+        <ion-input formControlName="password" type="password" label="Contraseña" label-placement="floating"></ion-input>
+      </p>
+      <p>
+        <ion-input formControlName="confirmacionPassword" type="password" label="Confirma Contraseña" label-placement="floating"></ion-input>
+      </p>
+
+    <br>
+
+    
+    <ion-button color= "warning" (click)="guardar()">Registrarse</ion-button>
+    </form>
+    
+
+  </ion-card-content>
+</ion-card>
+</ion-content>

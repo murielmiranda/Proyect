@@ -1,0 +1,27 @@
+ion-content{
+    --background: url(img/fondo.jpg) 0, 0/100% no-repeat;
+}
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+ion-buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+}
+
+ion-button{
+    margin-top: 20px;
+    
+}
+  
+
+
